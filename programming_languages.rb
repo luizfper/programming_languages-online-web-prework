@@ -12,7 +12,7 @@ def reformat_languages
     end
   end
 
-  puts new_hash.uniq
+  puts new_hash
 end
 
 def main_hash
