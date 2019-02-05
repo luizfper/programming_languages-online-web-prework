@@ -1,9 +1,9 @@
 def reformat_languages(languages)
   mainhash=main_hash
   new_hash={}
-  mainhash.each do |orient,language|
-    orient.each do |language, type|
-      
+  mainhash.each do |style,language|
+    language.each do |language2, type|
+      new_hash[language2][type]=type.values
     end
   end
 end
