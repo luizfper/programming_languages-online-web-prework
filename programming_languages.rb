@@ -1,5 +1,11 @@
 def reformat_languages(languages)
   mainhash=main_hash
+  new_hash={}
+  mainhash.each do |orient,language|
+    orient.each do |language, type|
+      
+    end
+  end
 end
 
 def main_hash
@@ -31,7 +37,6 @@ def main_hash
     :javascript => {
       :type => "interpreted"
     }
-
   }
  }
 end
