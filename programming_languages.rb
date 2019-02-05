@@ -1,5 +1,5 @@
-def reformat_languages
-  mainhash=main_hash
+def reformat_languages(languages)
+  mainhash=languages
   new_hash={}
   mainhash.each do |style,language|
     language.each do |language2, type|
@@ -11,8 +11,7 @@ def reformat_languages
       end
     end
   end
-
-  puts new_hash
+  new_hash
 end
 
 def main_hash
