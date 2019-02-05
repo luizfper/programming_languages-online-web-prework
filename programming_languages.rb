@@ -6,13 +6,13 @@ def reformat_languages
       if new_hash.key?(language2)
         new_hash[language2]=type
         new_hash[language2][:style]<<style
-      else  
+      else
         new_hash[language2]=type
         new_hash[language2][:style]=[style]
       end  
     end
   end
-  
+
   puts new_hash.uniq
 end
 
