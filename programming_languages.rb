@@ -46,4 +46,3 @@ def main_hash
   }
  }
 end
-reformat_languages
