@@ -4,12 +4,11 @@ def reformat_languages
   mainhash.each do |style,language|
     language.each do |language2, type|
       if new_hash.key?(language2)
-        new_hash[language2]=type
         new_hash[language2][:style]<<style
       else
         new_hash[language2]=type
         new_hash[language2][:style]=[style]
-      end  
+      end
     end
   end
 
