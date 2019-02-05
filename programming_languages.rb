@@ -7,7 +7,8 @@ def reformat_languages
       new_hash[language2][:style]=[style]
     end
   end
-  puts new_hash
+  
+  puts new_hash.uniq
 end
 
 def main_hash
