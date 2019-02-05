@@ -6,7 +6,7 @@ def reformat_languages
       new_hash[language2]=type
     end
   end
-  new_hash
+  puts new_hash
 end
 
 def main_hash
